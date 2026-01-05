@@ -1,6 +1,6 @@
 [project]
 name = "litelistener"
-version = "0.1.1"
+version = "0.1.2"
 description = "Uses liteclient to listen for keys in a redis-like queue"
 readme = "README.md"
 authors = [

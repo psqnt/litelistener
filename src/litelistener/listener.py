@@ -44,7 +44,7 @@ def poll(handlers: dict, host: str, port: int, target_keys: list):
         while True:
             # BLPOP returns [key_name, value]
             for key in target_keys:
-                result = client.rpop(target_keys, timeout=0)
+                result = client.rpop(target_keys)
                 if result:
                     key_name, data = result
                     # Execute the external logic passed into this function
