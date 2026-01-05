@@ -30,8 +30,6 @@ def poll(
                         handler(result)
                     else:
                         print(f"[?] No handler registered for key: {key}")
-                else:
-                    print("no result")
             sleep(poll_interval)
 
     except KeyboardInterrupt:
